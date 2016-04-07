@@ -10,7 +10,7 @@ package com.nickeson.Assignment1;
  * <b>Copyright:</b> Copyright (c) 2016<p/>
  * <b>Company:</b> Silicon Mountain Technologies<p/>
  * @author nickeson
- * @version 2.0
+ * @version 1.0
  * @since Apr 7, 2016<p/>
  * @updates:
  ****************************************************************************/
