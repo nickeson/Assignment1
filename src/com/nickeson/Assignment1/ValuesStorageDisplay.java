@@ -16,16 +16,23 @@ package com.nickeson.Assignment1;
  ****************************************************************************/
 
 public class ValuesStorageDisplay {
-
+	
 	public ValuesStorageDisplay() {
 
 	}
-
+	
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 
 		// Output to console what this program is going to do
 		System.out.println("This program will create, store, and display values"
 		+ " for the following primitives: int, double, float, char, boolean\n");
+	
+		// String s="Hello";
+		// s+= "World";
 		
 		// Declare and initialize primitive variable types and then display them 
 		int scaleSteps = 12;
@@ -47,6 +54,7 @@ public class ValuesStorageDisplay {
 		
 		// Display a message indicating the program is done running
 		System.out.println("That all, folks!");
+		
 	}
 
 }
