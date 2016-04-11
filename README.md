@@ -1,4 +1,4 @@
-# Assignment1
-This assignment corresponds to the first assignment in the 'Intro to Programming.ppt' document on the SMT Google Drive
+# Kris Nickeson's Training Assignments
 
-The BONUS exercise will be coded for separately as a new package called com.nickeson.Assignment1Bonus
+This Repository will be for all of Kris Nickeson's training assignments.  Different assignments will be separate branches for easy access.
+
