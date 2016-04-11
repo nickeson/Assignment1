@@ -4,8 +4,8 @@ package com.nickeson.Assignment1;
 
 /****************************************************************************
  * <b>Title</b>: ValuesStorage.java <p/>
- * <b>Project</b>: WebCrescendo <p/>
- * <b>Description: </b> Put Something Here
+ * <b>Project</b>: Assignment, Part I <p/>
+ * <b>Description: </b> Create, assign and print values for various primitives 
  * <p/>
  * <b>Copyright:</b> Copyright (c) 2016<p/>
  * <b>Company:</b> Silicon Mountain Technologies<p/>
@@ -30,10 +30,7 @@ public class ValuesStorageDisplay {
 		// Output to console what this program is going to do
 		System.out.println("This program will create, store, and display values"
 		+ " for the following primitives: int, double, float, char, boolean\n");
-	
-		// String s="Hello";
-		// s+= "World";
-		
+
 		// Declare and initialize primitive variable types and then display them 
 		int scaleSteps = 12;
 		System.out.println("Number of notes in the Western Diatonic Music "

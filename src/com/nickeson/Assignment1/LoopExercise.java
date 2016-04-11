@@ -27,8 +27,12 @@ public class LoopExercise {
 	* @param args
 	*/
 	public static void main(String[] args) {
-
-		// Creates a loop to display the numbers 1-10, and then reversed 10-1
+		
+		System.out.println("First we print positive integer values from 1-10\n");
+		
+		/**
+		 * Creates a loop to display the integers 1-10, and then reversed 10-1
+		 */
 		int counter = 1;
 		while (counter < 11) {
 			System.out.println("Value: " + counter);
@@ -36,14 +40,20 @@ public class LoopExercise {
 			
 		}
 		
-		System.out.println("\nNext we will print the values in reverse order\n");
+		System.out.println("\nNext we print the same values in reverse order\n");
 		
+		/**
+		 * Creates a loop to display the integers 1-10 in reverse order
+		 */
 		for(int revCounter=10; revCounter>=1; revCounter--){
             System.out.println("Value: " + revCounter);	
 		}
 
-		System.out.println("\nNext we will print only the even values from 1-20\n");
+		System.out.println("\nNext we print positive, even integers from 1-20\n");
 		
+		/**
+		 * Creates a loop to display only the even integers between 1 and 20
+		 */
 		int evensCounter = 2;
 		while (evensCounter <= 20) {
 		System.out.println("Value: " + evensCounter);	
