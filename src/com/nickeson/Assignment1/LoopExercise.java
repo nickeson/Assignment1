@@ -27,38 +27,68 @@ public class LoopExercise {
 	* @param args
 	*/
 	public static void main(String[] args) {
+		// 1 to ten counter
+		oneToTenCounter();
+		counter(1, 10, 1, true);
+
+		// Ten to one counter
+		tenToOneCounter();
+		counter(10, 1, 1, false);
 		
+		// Event counter
+		evenCounter();
+		counter(0, 20, 2, true);
+	}
+	
+	/**
+	 * Counter in multiple directions and steps
+	 * @param start Starting value for the counter
+	 * @param end Ending value of the counter
+	 * @param step Number of steps per iteration.
+	 * @param forward Determines the counter direction.
+	 */
+	public static void counter(int start, int end, int step, boolean forward) {
+		if (! forward) step = step * -1;
+		
+		for (int i = start; i < end; i += step) {
+			System.out.println("Value: " + i);
+		}
+	}
+	
+	/**
+	 * Creates a loop to display the integers 1-10, and then reversed 10-1
+	 */
+	public static void oneToTenCounter() {
 		System.out.println("First we print positive integer values from 1-10\n");
-		
-		/**
-		 * Creates a loop to display the integers 1-10, and then reversed 10-1
-		 */
 		int counter = 1;
+		
 		while (counter < 11) {
 			System.out.println("Value: " + counter);
 			counter++;
-			
 		}
-		
+	}
+	
+	/**
+	 * Creates a loop to display the integers 1-10 in reverse order
+	 */
+	public static void tenToOneCounter() {
 		System.out.println("\nNext we print the same values in reverse order\n");
 		
-		/**
-		 * Creates a loop to display the integers 1-10 in reverse order
-		 */
 		for(int revCounter=10; revCounter>=1; revCounter--){
             System.out.println("Value: " + revCounter);	
 		}
-
+	}
+	
+	/**
+	 * Creates a loop to display only the even integers between 1 and 20
+	 */
+	public static void evenCounter() {
 		System.out.println("\nNext we print positive, even integers from 1-20\n");
 		
-		/**
-		 * Creates a loop to display only the even integers between 1 and 20
-		 */
 		int evensCounter = 2;
 		while (evensCounter <= 20) {
-		System.out.println("Value: " + evensCounter);	
-		evensCounter += 2;
-
+			System.out.println("Value: " + evensCounter);	
+			evensCounter += 2;
 		}
 	}
 

@@ -1,7 +1,5 @@
 package com.nickeson.Assignment1;
 
-//JDK 1.8.0
-
 /****************************************************************************
  * <b>Title</b>: ValuesStorage.java <p/>
  * <b>Project</b>: Assignment, Part I <p/>
@@ -22,23 +20,27 @@ public class ValuesStorageDisplay {
 	}
 	
 	/**
-	 * 
-	 * @param args
+	 * Entry method.  Displaying variables
+	 * @param args Command line arguments.  Not used in this context
 	 */
 	public static void main(String[] args) {
-
+		
+		StringBuilder sb = new StringBuilder(64);
+		sb.append("This program will create, store, and display values ");
+		sb.append("for the following primitives: int, double, float, char, boolean\n");
+		
 		// Output to console what this program is going to do
-		System.out.println("This program will create, store, and display values"
-		+ " for the following primitives: int, double, float, char, boolean\n");
+		System.out.println(sb);
 
 		// Declare and initialize primitive variable types and then display them 
 		int scaleSteps = 12;
-		System.out.println("Number of notes in the Western Diatonic Music "
-		+ "Scale: " + scaleSteps + "\n");
+		sb = new StringBuilder(32);
+		sb.append("Number of notes in the Western Diatonic Music ");
+		sb.append("Scale: ").append(scaleSteps).append("\n");
+		System.out.println(sb);
 		
 		double goldenRatio = 1.61803398875d;
-		System.out.println("Golden Ratio to 11 decimal places: " + goldenRatio + 
-		"\n");
+		System.out.println("Golden Ratio to 11 decimal places: " + goldenRatio + "\n");
 
 		float pi = 3.14159265359f;
 		System.out.println("Pi: " + pi + "\n");
@@ -51,6 +53,8 @@ public class ValuesStorageDisplay {
 		
 		// Display a message indicating the program is done running
 		System.out.println("That all, folks!");
+		
+		LoopExercise.oneToTenCounter();
 		
 	}
 
