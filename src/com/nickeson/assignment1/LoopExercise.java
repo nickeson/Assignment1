@@ -1,4 +1,4 @@
-package com.nickeson.Assignment1;
+package com.nickeson.assignment1;
 
 //JDK 1.8.0
 
