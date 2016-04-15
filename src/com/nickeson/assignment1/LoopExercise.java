@@ -46,13 +46,13 @@ public class LoopExercise {
 		// demos counter using non-default (passed) values
 		System.out.println("\nNext we'll demonstrate counting by passing params\n");
 		
-		// backward
-		counter(10, 1, 1, false);
-		System.out.println("");
-		
 		// forward
 		counter(0, 20, 2, true);
 		System.out.println("");	
+		
+		// backward
+		counter(10, 1, 1, false);
+		System.out.println("");
 	}
 	
 	/**
@@ -63,25 +63,21 @@ public class LoopExercise {
 	 * @param forward Determines the counter direction.
 	 */
 	public static void counter(int start, int end, int step, boolean forward) {
+		// run the loop backwards if 'forward' is false
 		if (! forward) {
-			// printout range of values for backward loop
 			for (int i = start; i >= end; i -= step) {
-				System.out.println(start);
-				System.out.println(end);
-				System.out.println("Value: " + i);
+			 	System.out.println("Value: " + i);
 			}
 		}
 		
-		// printout range of values for forward loop
-		for (int i = start; i <= end; i += step) {
-			System.out.println(start);
-			System.out.println(end);
-			System.out.println("Value: " + i);
+		// run the loop forwards if 'forward' is true
+		 for (int i = start; i <= end; i += step) {
+		 	System.out.println("Value: " + i);
 		}
 	}
 	
 	/**
-	 * Creates a loop to display the integers 1-10, and then reversed 10-1
+	 * Creates a loop to display the integers 1-10
 	 */
 	public static void oneToTenCounter() {
 		int counter = 1;
