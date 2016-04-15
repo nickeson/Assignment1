@@ -21,12 +21,14 @@ import java.util.Random;
 public class ArrayPractice {
 	
 	// member variable, initialized to 10 for default constructor usage
-	private int ranNumberArraySize = 10;
+	public static final int RAN_NUM_SIZE = 10;
+	private int ranNumArraySize = 0;
 	
 	/**
 	 * default constructor
 	 */
 	public ArrayPractice() {
+		this(RAN_NUM_SIZE);
 	}
 	
 	/**
@@ -34,7 +36,8 @@ public class ArrayPractice {
 	 * @param ranNumberArraySize
 	 */
 	public ArrayPractice(int ranNumberArraySize) {
-		this.ranNumberArraySize = ranNumberArraySize;
+		super();
+		ranNumArraySize = ranNumberArraySize;
 	}
 	
 	/**
@@ -114,7 +117,7 @@ public class ArrayPractice {
 		
 		// declare and initialize array2 to ranNumArraySize
 		int [] arrayRandomNum;
-		arrayRandomNum = new int[this.ranNumberArraySize];
+		arrayRandomNum = new int[ranNumArraySize];
 		
 		// loop through array, set values to random numbers & output values
 		for (int i = 0; i < arrayRandomNum.length; i++) {
@@ -135,7 +138,7 @@ public class ArrayPractice {
 	 * @return the ranNumberArraySize
 	 */
 	public int getRanNumberArraySize() {
-		return ranNumberArraySize;
+		return ranNumArraySize;
 	}
 
 	/**
@@ -143,6 +146,6 @@ public class ArrayPractice {
 	 * @param ranNumberArraySize the ranNumberArraySize to set
 	 */
 	public void setRanNumberArraySize(int ranNumberArraySize) {
-		this.ranNumberArraySize = ranNumberArraySize;
+		this.ranNumArraySize = ranNumberArraySize;
 	}
 }

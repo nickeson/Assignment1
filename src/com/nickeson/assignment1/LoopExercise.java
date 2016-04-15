@@ -19,38 +19,63 @@ package com.nickeson.assignment1;
 
 public class LoopExercise {
 
+	/**
+	 * default constructor
+	 */
 	public LoopExercise() {
 		
 	}
+	
 	/**
-	* 
+	* main method calls various counting methods for illustration purposes
 	* @param args
 	*/
 	public static void main(String[] args) {
-		// 1 to ten counter
+		// demos One to Ten counter
+		System.out.println("First we print positive integer values from 1-10\n");
 		oneToTenCounter();
-		counter(1, 10, 1, true);
-
-		// Ten to one counter
-		tenToOneCounter();
-		counter(10, 1, 1, false);
 		
-		// Event counter
+		// demos Ten to One counter
+		System.out.println("\nNext we print the same values in reverse order\n");
+		tenToOneCounter();
+		
+		// demos even number counter
+		System.out.println("\nNext we print positive, even integers from 1-20\n");
 		evenCounter();
+		
+		// demos counter using non-default (passed) values
+		System.out.println("\nNext we'll demonstrate counting by passing params\n");
+		
+		// backward
+		counter(10, 1, 1, false);
+		System.out.println("");
+		
+		// forward
 		counter(0, 20, 2, true);
+		System.out.println("");	
 	}
 	
 	/**
-	 * Counter in multiple directions and steps
+	 * Generic Counter in multiple directions and steps
 	 * @param start Starting value for the counter
 	 * @param end Ending value of the counter
 	 * @param step Number of steps per iteration.
 	 * @param forward Determines the counter direction.
 	 */
 	public static void counter(int start, int end, int step, boolean forward) {
-		if (! forward) step = step * -1;
+		if (! forward) {
+			// printout range of values for backward loop
+			for (int i = start; i >= end; i -= step) {
+				System.out.println(start);
+				System.out.println(end);
+				System.out.println("Value: " + i);
+			}
+		}
 		
-		for (int i = start; i < end; i += step) {
+		// printout range of values for forward loop
+		for (int i = start; i <= end; i += step) {
+			System.out.println(start);
+			System.out.println(end);
 			System.out.println("Value: " + i);
 		}
 	}
@@ -59,7 +84,6 @@ public class LoopExercise {
 	 * Creates a loop to display the integers 1-10, and then reversed 10-1
 	 */
 	public static void oneToTenCounter() {
-		System.out.println("First we print positive integer values from 1-10\n");
 		int counter = 1;
 		
 		while (counter < 11) {
@@ -72,8 +96,6 @@ public class LoopExercise {
 	 * Creates a loop to display the integers 1-10 in reverse order
 	 */
 	public static void tenToOneCounter() {
-		System.out.println("\nNext we print the same values in reverse order\n");
-		
 		for(int revCounter=10; revCounter>=1; revCounter--){
             System.out.println("Value: " + revCounter);	
 		}
@@ -83,13 +105,10 @@ public class LoopExercise {
 	 * Creates a loop to display only the even integers between 1 and 20
 	 */
 	public static void evenCounter() {
-		System.out.println("\nNext we print positive, even integers from 1-20\n");
-		
 		int evensCounter = 2;
 		while (evensCounter <= 20) {
 			System.out.println("Value: " + evensCounter);	
 			evensCounter += 2;
 		}
 	}
-
 }
