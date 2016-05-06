@@ -24,7 +24,9 @@ public class Bird extends Animal {
 	 */
 	public Bird() { 
 		
-	super();
+		super(); // explicitly called - compiler does this for us if not stated explicitly
+		
+		// System.out.println("Bird Constructor");
 	
 	}
 
@@ -50,13 +52,14 @@ public class Bird extends Animal {
 		// use overridden methods from subclass
 		testBird.sleep();
 		testBird.eat();
-	}
+		}
 
 	/**
 	 * method from 'Bird' sub-class, overrides method with same name from 'Animal' superclass 
 	 */
 	@Override // annotation from example I found - I don't know how to use these yet
 	public void sleep() {
+		// super.sleep(); // prints 'An animal sleeps...' as it references the sleep method from superclass
 		System.out.println("A bird sleeps...");
 	}
 	

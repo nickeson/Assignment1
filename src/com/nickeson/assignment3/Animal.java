@@ -21,6 +21,7 @@ public class Animal {
 	 * default constructor for Animal superclass
 	 */
 	public Animal() {
+		// System.out.println("Animal Constructor");
 	}
 	
 	/**
